@@ -1,6 +1,6 @@
 <template>
-  <div id="app">
-    <img :src="require('./assets/logo.png')">
+  <div id="app" class="bg-green-200">
+    <img class="rounded-full mx-auto bg-indigo" :src="require('./assets/logo.png')">
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
     <ul>
@@ -20,6 +20,7 @@
 </template>
 
 <script>
+import './css/tailwind.css'
 export default {
   name: 'app',
   data () {
